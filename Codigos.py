@@ -1,23 +1,51 @@
-print ("olá Lorena, tudo bem?")
-print (2+3)
-nome = "Lorena"
-print ("olá,", nome)
-idade = 40
-print ("Daqui a 10 anos voce terá", idade + 10)
-print ("Meu primeiro programa em Python")
-print(34)
-print ("Faturamento", 1000)
-print ("Custo", 700)
-print("Lucro", 1000 - 700)
-peso = 94.5
-print("Nome:", nome)
-print("Idade:", idade)
-print("Peso:", peso)
-cidade = "Itacaré"
-print("olá, Lorena! sua idade é", idade)
-print("E voce mora na cidade de", cidade)
-print("Olá, ", nome , "Vejo que voce mora em",  cidade,  "tem", idade, "anos e mora em", cidade)
-nome = input("Digite seu nome:")
-idade = input("Digite sua idade:")
-cidade = input("Digite a cidade onde mora:")
-print("Olá,", nome + "!", "vejo que voce tem", idade, "anos e mora em", cidade + "." )
+# Taxa de cambio
+
+Dolar = 5.20
+Euro = 6.15
+valor_reais = 100.0
+
+valor_em_dolar = valor_reais / Dolar
+valor_em_euro = valor_reais / Euro
+
+print(f"O valor do dolar é:, {valor_em_euro:.2f}")
+print(f"O valor do euro é:, {valor_em_dolar:.2f}")
+print(f"Valor em reais: {valor_reais:.2f}")
+
+# Calcular desconto e preco final 
+
+Produto = "Camiseta"
+Preco_produto = 50
+Desconto = 20
+
+Valor_desconto = Preco_produto * (Desconto/100)
+Valor_final = Preco_produto - Desconto
+
+print(f"O valor do desconto é:, {Valor_desconto:.2f}")
+print(f"O valor da camiseta com desconto é:, {Valor_final:.2f}")
+
+# Média escolar 
+
+Nota1 = 7.5
+Nota2 = 8.0
+Nota3 = 6.5
+
+Média_nota = (Nota1 + Nota2 + Nota3) / 3
+
+print(f"A nota 1 é:, {Nota1}")
+print(f"A nota 2 é:, {Nota2}")
+print(f"A nota 3 é:, {Nota3}")
+print(f"A médias escolar é:, {Média_nota:.2f}")
+
+Lorena = input("Olá, qual o seu nome?")
+print("Nome inválido")
+
+idade = int(input("Qual a sua idade?"))
+if idade < 13:
+    print("Crianca")
+elif idade < 18:
+    print("Adolescente")
+elif idade < 60:
+    print("Adulto")
+else:
+    print("Idoso")
+
