@@ -13,12 +13,12 @@ else:
 
     # 2 - Calculadora de IMC
 
-    peso = float(input("Digite seu peso em kg: "))
+peso = float(input("Digite seu peso em kg: "))
 altura = float(input("Digite sua altura em metros: "))
 
-imc = peso / (altura ** 2)
+imc = peso/(altura ** 2)
 
-print("Seu IMC é:", round(imc, 2))
+print(f"Seu IMC é:{imc:.2f}")
 
 if imc < 18.5:
     print("Classificação: Abaixo do peso")
@@ -31,7 +31,7 @@ else:
 
     # 3 - Conversor de temperatura 
 
-    temp = float(input("Digite a temperatura: "))
+temp = float(input("Digite a temperatura: "))
 origem = input("Digite a unidade de origem (C/F/K): ").upper()
 destino = input("Digite a unidade de destino (C/F/K): ").upper()
 

@@ -1,14 +1,10 @@
-while True:
-    senha = input("Digite uma senha (ou 'sair' para encerrar): ")
+ # 4 - Verificador de ano bissexto 
 
-    if senha.lower() == 'sair':
-        print("Encerrado.")
-        break
+ano = int(input("Digite o ano: "))
 
-    tem_numero = any(char.isdigit() for char in senha)
+if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+    print(ano, "é um ano bissexto.")
+else:
+    print(ano, "não é um ano bissexto.")
 
-    if len(senha) >= 8 and tem_numero:
-        print("Senha forte!")
-        break
-    else:
-        print("Senha fraca. Ela deve ter pelo menos 8 caracteres e pelo menos 1 número.")
+    
