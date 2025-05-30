@@ -15,7 +15,7 @@ def eh_palindromo(texto):
     texto = ''.join(c for c in texto.lower() if c.isalnum())  # Remove espaços e pontuações
     return texto == texto[::-1]
 
-# Exemplo de uso:
+
 entrada = input("Digite uma palavra ou frase: ")
 if eh_palindromo(entrada):
     print("Sim")
@@ -31,7 +31,6 @@ def idade_em_dias(ano_nascimento):
     idade_anos = ano_atual - ano_nascimento
     return idade_anos * 365  # Aproximado, sem contar anos bissextos
 
-# Exemplo de uso:
 ano = int(input("Digite seu ano de nascimento: "))
 dias = idade_em_dias(ano)
 print(f"Você tem aproximadamente {dias} dias de vida.")
