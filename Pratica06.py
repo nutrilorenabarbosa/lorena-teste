@@ -8,7 +8,6 @@ def gerar_senha(tamanho):
     senha = ''.join(random.choice(caracteres) for _ in range(tamanho))
     return senha
 
-# Uso:
 tamanho = int(input("Digite a quantidade de caracteres da senha: "))
 senha = gerar_senha(tamanho)
 print(f"Senha gerada: {senha}")
@@ -34,7 +33,6 @@ def gerar_perfil_aleatorio():
     else:
         print("Erro ao acessar a API.")
 
-# Uso:
 gerar_perfil_aleatorio()
 
 # 3 - Consulta de endereco
@@ -86,7 +84,6 @@ def consultar_cotacao(moeda):
     else:
         print("Erro ao acessar a API.")
 
-# Uso:
 moeda = input("Digite o código da moeda (ex: USD, EUR, GBP): ").upper()
 consultar_cotacao(moeda)
 

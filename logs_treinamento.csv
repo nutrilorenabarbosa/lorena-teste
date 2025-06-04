@@ -1,0 +1,7 @@
+evento,tempo_execucao,status
+inicio_treinamento,120.5,sucesso
+epoch_1,15.2,sucesso
+epoch_2,14.8,sucesso
+epoch_3,16.1,falha
+validacao,5.3,sucesso
+final_treinamento,130.0,sucesso
